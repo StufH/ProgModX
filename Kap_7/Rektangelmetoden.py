@@ -10,4 +10,4 @@ def rektangelmetoden(f, a, b, n):
     return Areal
 
 print(rektangelmetoden(f, 0, 5, 10000))
-print((1/3)*(5**3))
+print()
