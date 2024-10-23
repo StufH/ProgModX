@@ -1,5 +1,5 @@
 def f(x):
-    return 5*x*5 + 3*x + 3
+    return 2*x + 1
 
 def Newton(f,x,h):
     fder = (f(x+h)-f(x))/(h)

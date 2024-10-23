@@ -1,13 +1,14 @@
 def f(x):
-    return x**2
+    return x**2 - 4*x + 5
+n = 100
 
-def rektangelmetoden(f, a, b, n):
+def rektangelmetoden(a, b):
     total = 0.0
     h = (b-a)/n
     for k in range(0, n):
-        total = total + f(a + (k*h))
-    Areal = h*total
-    return Areal
+        total += f(a + (k*h))
+    areal = h*total
+    return areal
 
-print(rektangelmetoden(f, 0, 5, 10000))
-print()
+# if __name__ == "__main__":
+print(f"rektangelmetoden: {rektangelmetoden(0, 5)}")
