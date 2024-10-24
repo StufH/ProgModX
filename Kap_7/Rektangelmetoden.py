@@ -13,4 +13,3 @@ def rektangelmetoden(a, b):
 
 if __name__ == "__main__":
     print(f"rektangelmetoden: {rektangelmetoden(0, 5)}")
-
