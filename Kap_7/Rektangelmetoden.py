@@ -1,5 +1,6 @@
+import numpy as np
 def f(x):
-    return x**2 - 4*x + 5
+    return np.e**x
 n = 100
 
 def rektangelmetoden(a, b):
@@ -10,5 +11,6 @@ def rektangelmetoden(a, b):
     areal = h*total
     return areal
 
-# if __name__ == "__main__":
-print(f"rektangelmetoden: {rektangelmetoden(0, 5)}")
+if __name__ == "__main__":
+    print(f"rektangelmetoden: {rektangelmetoden(0, 5)}")
+

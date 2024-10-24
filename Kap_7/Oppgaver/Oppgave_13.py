@@ -1,3 +1,6 @@
+def f(x):
+    return x**2
+
 def rektangelmetoden(a, b, n):
     total = 0.0
     h = (b-a)/n
