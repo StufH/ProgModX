@@ -3,7 +3,10 @@ class Bil:
         self.merke = merke
         self.hestekrefter = hestekrefter
 
-    def kjør(self) -> None:
+    def __str__(self) -> str:
+        return f"{self.merke}, {self.hestekrefter}hk"
+
+    def kjor(self) -> None:
         if self.hestekrefter < 250:
             print(f"{self.merke}en kjører sakte!")
         else:
@@ -12,10 +15,18 @@ class Bil:
     def hent_info(self) -> None:
         print(f"{self.merke}en har {self.hestekrefter} hestekrefter")
 
-volvo: Bil = Bil("volvo", 200)
-BMW: Bil = Bil("BMW", 300)
-volvo.kjør()
+volvo: Bil = Bil("Volvo", 200)
+bmw: Bil = Bil("BMW", 300)
+
+volvo.kjor()
 volvo.hent_info()
+
 print("")
-BMW.kjør()
-BMW.hent_info()
+
+bmw.kjor()
+bmw.hent_info()
+
+print("")
+
+print(volvo)
+print(bmw)
