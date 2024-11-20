@@ -1,11 +1,12 @@
 import os
+
 if os.path.exists("Dokument.txt"):
     os.remove("Dokument.txt")
 fil = open("Dokument.txt", "w", encoding="utf-8")
-fil.write("Jeg har ett helt dokument med flere ord, dette kan gå ganske bra. hvordan skal du skjønne dette når jeg lager en liste? men hvordan har du det da?")
+fil.write(
+    "Jeg har ett helt dokument med flere ord, dette kan gå ganske bra. hvordan skal du skjønne dette når jeg lager en liste? men hvordan har du det da?")
 fil.close()
 fil = open("Dokument.txt", "r")
-
 
 ord = []
 bokstaver = []
