@@ -9,14 +9,14 @@ def f(x):
     return 0.5 * x ** 3 - 2 * x ** 2 + 1 # 0.5x^3 - 2x^2 + 1
 
 
-m = (a + b) / 2
+c = (a + b) / 2
 
-while abs(f(m)) >= noyaktighet:
-    if f(a) * f(m) < 0:
-        b = m
+while abs(f(c)) >= noyaktighet:
+    if f(a) * f(c) < 0:
+        b = c
     else:
-        a = m
+        a = c
 
-    m = (a + b) / 2
+    c = (a + b) / 2
 
-print(f"Løsningen på likningen er tilnærmet lik {round(m, 4)}")
+print(f"Løsningen på likningen er tilnærmet lik {round(c, 4)}x")
